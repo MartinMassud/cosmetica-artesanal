@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="cosmeticos artesanales y tratamientos esteticos en Maldonado, Uruguay.">
+    <meta name="keywords" content="Cosmeticos,cosmeticos artesanales,artesanal,natural, masajes, cosmeticos uruguay"> 
+    <title>Contacto-Cosmética Artesanal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="icon" href="../imagen/icono.ico">
+        <style>
+          #ultimo + div{
+              visibility:hidden;
+          }
+          </style>
+    <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+<!-- navbar inicio -->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark"!important >
+    <!-- Brand -->
+    <a class="navbar-brand" href="../index.html"><img src="../imagen/1.png" alt="logo"> Cosmética Artesanal</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../paginas/jabones.html">Jabones</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../paginas/contacto.html">Contacto</a></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../paginas/cosmeticos.html">Cosméticos</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../paginas/nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/tratamientos.html">Tratamientos</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!--navbar fin  -->
+
+<main>
+  <h3 data-aos="zoom-in" class="h3">Si tiene alguna consulta, pregunta o sugerencia no dude en contactarse con nosotros</h3>
+    <div class="container">
+        
+        <h2>Contacto</h2> <br>
+    <div class="col-sm-12 col-md-12 col-lg-12">
+                
+            <form action="enviar.php" method=¨post¨ enctype="application/x-www-form-urlencoded">
+          
+            <div class="form-group">
+                <label for="casilla1">Nombre:</label>
+                <input type=¨text¨ required name ¨casilla1 placeholder="Introduzca su nombre" class="form-control">
+            </div>
+
+                
+            <div class="form-group">
+                <label for="casilla2">Email:</label>
+                <input type=¨email¨ required name ¨casilla2¨ placeholder="mail@mail.com" class="form-control"> 
+                
+            </div>
+
+            <div class="form-group">
+                <textarea name="area de texto" id="" cols="30" rows="10" placeholder="deja tu consulta y te contactaremos por mail a la brevedad" class="form-control"></textarea>
+            </div>  
+               
+            <div class="form-group">
+                <input type="submit" class="btn btn-secondary" value="enviar">
+                <input type="reset" class="btn btn-secondary" value="eliminar">
+            </div>
+
+            </form>
+     </div>
+     </div>
+
+    </main>
+
+
+ <!-- footer -->
+<footer class="footer">
+    
+        
+        <div>Consigue nuestros productos en: <br><a href="https://risata.uy/">risata.uy <br><img src="../imagen/risata.png" alt="image" height="30" width="auto"></a> <br> 098 91 430 460 - hola@risata.uy</div>
+</footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
+    </script>  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script> 
+    <div id="ultimo"></div>
+
+    
+</body>
+</html>

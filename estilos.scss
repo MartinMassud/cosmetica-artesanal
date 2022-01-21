@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+    //paleta colores
+    
+    $paleta:(
+    "color-rosa":#EAD7E1,
+    "color-gris": #343A40,
+    "color-parrafo": rgb(72, 61, 139),
+    "color-violeta": rgb(181, 158, 199)
+    );
+    //fin paleta colores
+    
+ // mixin
+ 
+    @mixin bodySizes ($width, $height) {
+        height: $height;
+        width: $width;
+    }
+//fin mixin
+
+    body {
+        @include bodySizes(100vw,auto);
+        background-color: map-get($paleta, "color-rosa" );}
+    /* home */
+    .navbar-brand img {
+       height: 50px; 
+    }
+    main {
+     
+        background-size: cover;
+        height: 100%;
+    }
+    .jumbotron-home{
+        background-image: url(./imagen/hola.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+    
+    p{
+        color: map-get($paleta ,"color-violeta");
+        font-size: 45px;
+        text-align: center;
+        -ms-text-size-adjust: auto;
+        text-shadow: slategray;
+        -webkit-text-stroke: 1px #2a262b;
+    }
+}
+    .h2{
+        color: map-get($paleta ,"color-gris" );;
+        margin: 50px 0 50px 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 300%;
+        text-align: center;
+        padding: 30px 0 30px 0;
+    }
+    .carousel-inner{
+       width: 100%;
+       height: 100%;
+       padding-bottom: 60px;      
+    
+    img{
+        width: 100%;
+    }
+}
+    .section{
+        width:30%;
+        margin-left: 35%;
+    }
+    /* FIN home */
+    
+    
+    /* CONTACTO */
+    .h3{
+        text-align: center;
+        color: map-get($paleta ,"color-gris" );;
+        padding: 30px 0 30px 0;
+    
+    }
+    .container{
+        display: flexbox;
+        color:map-get($paleta ,"color-violeta" );;
+        width: 80%;
+        margin-bottom:20px;
+        border-radius: 1em;
+        padding-bottom: 0.5em;
+        justify-content: center;
+        background-color: map-get($paleta ,"color-gris" );;
+    
+    h2{
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 0.5em;
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    }
+        /* FIN CONTACTO */
+    
+        /* MAIN COSMETICOS */
+    
+    .main-cosmeticos h2 {
+        
+        text-align:center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #2a262b;
+        border-width: thick;
+        padding: 30px 0 30px 0;
+    }
+        
+        
+        
+    .main-cosmeticos__contenedor{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap:10px ;
+        row-gap:10px;
+        margin: 10px 0px 50px 0px;
+        
+        .main-cosmeticos__contenedor__row{
+            display: grid;
+            column-gap: 1000px;
+        }
+        
+            .crema{
+                padding: 50px;
+                text-align: center;
+                color: map-get($paleta , "color-parrafo" );
+            
+                img:hover{
+                    transform: scale(1.15);
+                }
+            }
+    }
+        /* FIN MAIN COSMETICOS */
+    
+    
+        /* MAIN JABONES */
+        .main-jabones h2{
+        
+            @extend .main-cosmeticos;
+            
+            
+        }
+            .main-jabones__contenedor{
+                display: grid;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                column-gap:10px ;
+                row-gap:10px;
+                margin: 10px 0px 50px 0px;
+                    
+            }
+            .jabon{
+                padding: 50px;
+                text-align: center;  
+                color: map-get($paleta ,"color-parrafo" );;      
+                
+            
+            img:hover{
+                transform: scale(1.15);
+            }
+        }
+    
+        /* FIN MAIN JABONES */
+    
+    
+        /* MAIN NOSOTROS */
+        .cointainer-fluid h2{
+            text-align: left;
+            background-color:map-get($paleta ,"color-rosa" );
+            font-size: 40px;
+            margin-bottom: 0px;
+            padding: 30px 0 30px 10px;
+        }
+    
+    .n-left{
+        height: auto;
+        background-color:map-get($paleta ,"color-rosa" );;
+        
+    
+    h2{
+        text-align: center;
+    }
+    p{
+        color:map-get($paleta ,"color-parrafo" );;
+        
+        text-align: justify;
+        padding: 10%;
+    }
+}
+    .n-right{
+        height: auto;
+        padding-left: 0px;
+        
+    
+    img{
+        width: 100%;
+        padding: 0 40px 40px 40px;
+    
+    }
+}
+    
+    
+    /* FIN MAIN NOSOTROS */
+    
+    
+    /* MAIN TRATAMIENTOS */
+    .main-tratamiento{
+        text-align: center;
+    }
+    .jumbotron{
+        background-image: url(./imagen/vintage-g307582187_1920.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color: whitesmoke;
+        text-shadow: slategray;
+        font-size: 30px;
+        
+        
+    
+    h2{
+        color: rgb(19, 5, 2);
+        font-size: 45px;
+    }
+}
+    
+    .container-tratamiento p{
+        padding-left: 30px;
+        color: map-get($paleta, "color-parrafo");
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    }
+    .container-tratamiento ul{
+        font-size: 20px;
+        color: map-get($paleta, "color-parrafo");
+        padding-left: 50px;
+    }
+    .container-tratamiento h3{
+        text-align: center;
+        color: map-get($paleta, "color-gris");
+    }
+    
+    /* FIN MAIN TRATAMIEN
+    /* FIN MAIN TRATAMIENTOS */
+        
+    
+    footer{
+        display: flexbox;
+        background-color: map-get($paleta ,"color-gris" );;
+        width: 100%;
+     
+        text-align: center;
+        color: #9A9DA0;
+    }
+    
+    

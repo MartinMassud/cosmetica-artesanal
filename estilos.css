@@ -1,0 +1,223 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  height: auto;
+  width: 100vw;
+  background-color: #EAD7E1;
+}
+
+/* home */
+.navbar-brand img {
+  height: 50px;
+}
+
+main {
+  background-size: cover;
+  height: 100%;
+}
+
+.jumbotron-home {
+  background-image: url(./imagen/hola.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.jumbotron-home p {
+  color: #b59ec7;
+  font-size: 45px;
+  text-align: center;
+  -ms-text-size-adjust: auto;
+  text-shadow: slategray;
+  -webkit-text-stroke: 1px #2a262b;
+}
+
+.h2 {
+  color: #343A40;
+  margin: 50px 0 50px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 300%;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 60px;
+}
+.carousel-inner img {
+  width: 100%;
+}
+
+.section {
+  width: 30%;
+  margin-left: 35%;
+}
+
+/* FIN home */
+/* CONTACTO */
+.h3 {
+  text-align: center;
+  color: #343A40;
+  padding: 30px 0 30px 0;
+}
+
+.container {
+  display: flexbox;
+  color: #b59ec7;
+  width: 80%;
+  margin-bottom: 20px;
+  border-radius: 1em;
+  padding-bottom: 0.5em;
+  justify-content: center;
+  background-color: #343A40;
+}
+.container h2 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-top: 0.5em;
+  font-size: 45px;
+  font-weight: bolder;
+}
+
+/* FIN CONTACTO */
+/* MAIN COSMETICOS */
+.main-cosmeticos h2, .main-jabones h2 h2 {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #2a262b;
+  border-width: thick;
+  padding: 30px 0 30px 0;
+}
+
+.main-cosmeticos__contenedor {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  margin: 10px 0px 50px 0px;
+}
+.main-cosmeticos__contenedor .main-cosmeticos__contenedor__row {
+  display: grid;
+  -moz-column-gap: 1000px;
+       column-gap: 1000px;
+}
+.main-cosmeticos__contenedor .crema {
+  padding: 50px;
+  text-align: center;
+  color: darkslateblue;
+}
+.main-cosmeticos__contenedor .crema img:hover {
+  transform: scale(1.15);
+}
+
+/* FIN MAIN COSMETICOS */
+/* MAIN JABONES */
+.main-jabones__contenedor {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+  margin: 10px 0px 50px 0px;
+}
+
+.jabon {
+  padding: 50px;
+  text-align: center;
+  color: darkslateblue;
+}
+.jabon img:hover {
+  transform: scale(1.15);
+}
+
+/* FIN MAIN JABONES */
+/* MAIN NOSOTROS */
+.cointainer-fluid h2 {
+  text-align: left;
+  background-color: #EAD7E1;
+  font-size: 40px;
+  margin-bottom: 0px;
+  padding: 30px 0 30px 10px;
+}
+
+.n-left {
+  height: auto;
+  background-color: #EAD7E1;
+}
+.n-left h2 {
+  text-align: center;
+}
+.n-left p {
+  color: darkslateblue;
+  text-align: justify;
+  padding: 10%;
+}
+
+.n-right {
+  height: auto;
+  padding-left: 0px;
+}
+.n-right img {
+  width: 100%;
+  padding: 0 40px 40px 40px;
+}
+
+/* FIN MAIN NOSOTROS */
+/* MAIN TRATAMIENTOS */
+.main-tratamiento {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: url(./imagen/vintage-g307582187_1920.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: slategray;
+  font-size: 30px;
+}
+.jumbotron h2 {
+  color: #130502;
+  font-size: 45px;
+}
+
+.container-tratamiento p {
+  padding-left: 30px;
+  color: darkslateblue;
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container-tratamiento ul {
+  font-size: 20px;
+  color: darkslateblue;
+  padding-left: 50px;
+}
+
+.container-tratamiento h3 {
+  text-align: center;
+  color: #343A40;
+}
+
+/* FIN MAIN TRATAMIEN
+/* FIN MAIN TRATAMIENTOS */
+footer {
+  display: flexbox;
+  background-color: #343A40;
+  width: 100%;
+  text-align: center;
+  color: #9A9DA0;
+}/*# sourceMappingURL=estilos.css.map */
