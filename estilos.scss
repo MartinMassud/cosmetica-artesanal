@@ -23,7 +23,8 @@
 
     body {
         @include bodySizes(100vw,auto);
-        background-color: map-get($paleta, "color-rosa" );}
+        background-color: map-get($paleta, "color-rosa" );
+    }
     /* home */
     .navbar-brand img {
        height: 50px; 
@@ -76,19 +77,19 @@
     /* CONTACTO */
     .h3{
         text-align: center;
-        color: map-get($paleta ,"color-gris" );;
+        color: map-get($paleta ,"color-gris" );
         padding: 30px 0 30px 0;
     
     }
     .container{
         display: flexbox;
-        color:map-get($paleta ,"color-violeta" );;
+        color:map-get($paleta ,"color-violeta" );
         width: 80%;
         margin-bottom:20px;
         border-radius: 1em;
         padding-bottom: 0.5em;
         justify-content: center;
-        background-color: map-get($paleta ,"color-gris" );;
+        background-color: map-get($paleta ,"color-gris" );
     
     h2{
         text-align: center;
@@ -122,7 +123,7 @@
         row-gap:10px;
         margin: 10px 0px 50px 0px;
         
-        .main-cosmeticos__contenedor__row{
+        .row{
             display: grid;
             column-gap: 1000px;
         }
@@ -131,10 +132,9 @@
                 padding: 50px;
                 text-align: center;
                 color: map-get($paleta , "color-parrafo" );
-            
-                img:hover{
+                    img:hover{
                     transform: scale(1.15);
-                }
+                    }
             }
     }
         /* FIN MAIN COSMETICOS */
@@ -155,16 +155,15 @@
                 column-gap:10px ;
                 row-gap:10px;
                 margin: 10px 0px 50px 0px;
-                    
-            }
+            
+            
             .jabon{
                 padding: 50px;
                 text-align: center;  
-                color: map-get($paleta ,"color-parrafo" );;      
-                
-            
-            img:hover{
-                transform: scale(1.15);
+                color: map-get($paleta ,"color-parrafo" );            
+                    img:hover{
+                        transform: scale(1.15);
+                    }
             }
         }
     
@@ -172,40 +171,38 @@
     
     
         /* MAIN NOSOTROS */
-        .cointainer-fluid h2{
+        .cointainer-fluid {
+            h2{
             text-align: left;
             background-color:map-get($paleta ,"color-rosa" );
             font-size: 40px;
             margin-bottom: 0px;
             padding: 30px 0 30px 10px;
-        }
+            }
+        
     
     .n-left{
         height: auto;
-        background-color:map-get($paleta ,"color-rosa" );;
-        
-    
-    h2{
-        text-align: center;
+        background-color:map-get($paleta ,"color-rosa" );
+            h2{
+            text-align: center;
+            }
+            p{
+            color:map-get($paleta ,"color-parrafo" );
+            text-align: justify;
+            padding: 10%;
+            }
     }
-    p{
-        color:map-get($paleta ,"color-parrafo" );;
-        
-        text-align: justify;
-        padding: 10%;
-    }
-}
     .n-right{
         height: auto;
         padding-left: 0px;
-        
-    
-    img{
-        width: 100%;
-        padding: 0 40px 40px 40px;
-    
-    }
+        img{
+            width: 100%;
+            padding: 0 40px 40px 40px;
+        }
 }
+            }
+
     
     
     /* FIN MAIN NOSOTROS */
@@ -224,6 +221,7 @@
         color: whitesmoke;
         text-shadow: slategray;
         font-size: 30px;
+        object-fit: cover;
         
         
     
@@ -232,33 +230,43 @@
         font-size: 45px;
     }
 }
+    .container-tratamiento{
+        hr{
+            color: map-get($paleta ,"color-parrafo");
+            height: 1px;
+        }
+        
+        p{
+            margin-right: 30px !important; 
+            color: map-get($paleta, "color-parrafo");
+            font-size: 30px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
     
-    .container-tratamiento p{
-        padding-left: 30px;
-        color: map-get($paleta, "color-parrafo");
-        font-size: 30px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     
-    }
-    .container-tratamiento ul{
-        font-size: 20px;
-        color: map-get($paleta, "color-parrafo");
-        padding-left: 50px;
-    }
-    .container-tratamiento h3{
-        text-align: center;
-        color: map-get($paleta, "color-gris");
-    }
+        ul{
+            font-size: 20px;
+            color: map-get($paleta, "color-parrafo");
+            padding-left: 50px;
+            margin-right: 30px;
+        }
+    
+        h3{
+            text-align: center;
+            color: map-get($paleta, "color-gris");
+            padding-bottom: -20px;
+        }
+    
+}
     
     /* FIN MAIN TRATAMIEN
     /* FIN MAIN TRATAMIENTOS */
         
     
-    footer{
-        display: flexbox;
-        background-color: map-get($paleta ,"color-gris" );;
+    .footer{
+        display: flex;
+        background-color: map-get($paleta ,"color-gris");
         width: 100%;
-     
         text-align: center;
         color: #9A9DA0;
     }
