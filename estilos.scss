@@ -65,6 +65,7 @@
     
     img{
         width: 100%;
+        margin-left: 5%;
     }
 }
     .section{
@@ -89,9 +90,13 @@
         padding: 50px;
         text-align: center;  
         color: map-get($paleta ,"color-parrafo" );
-        margin: 20px;  
+        margin: 20px; 
+        img{width: 100%;
+            overflow: hidden;
+        } 
         :hover{
             filter: grayscale(70%);}
+           
         
 }
 }
@@ -267,6 +272,13 @@
         font-size: 45px;
     }
 }
+@media screen and (min-width:300px) and (max-width:400px){
+.jumbotron{
+    margin-right: 10px;
+    margin-left: 10px;
+        }
+}
+    
     .container-tratamiento{
         hr{
             color: map-get($paleta ,"color-parrafo");
