@@ -14,7 +14,7 @@
     //fin paleta colores
     
  // mixin
- 
+
     @mixin bodySizes ($width, $height) {
         height: $height;
         width: $width;
@@ -22,17 +22,17 @@
 //fin mixin
 
     body {
-        @include bodySizes(100vw,auto);
+        @include bodySizes(100%,auto);
         background-color: map-get($paleta, "color-rosa" );
     }
     /* home */
     .navbar-brand img {
-       height: 50px; 
+        height: 50px; 
     }
     main {
-     
         background-size: cover;
         height: 100%;
+        width: 100%;
     }
     .jumbotron-home{
         background-image: url(./imagen/hola.jpg);
@@ -51,7 +51,7 @@
     }
 }
     .h2{
-        color: map-get($paleta ,"color-gris" );;
+        color: map-get($paleta ,"color-parrafo" );
         margin: 50px 0 50px 0;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 300%;
@@ -59,9 +59,9 @@
         padding: 30px 0 30px 0;
     }
     .carousel-inner{
-       width: 100%;
-       height: 100%;
-       padding-bottom: 60px;      
+        width: 100%;
+        height: 100%;
+        padding-bottom: 15%;      
     
     img{
         width: 100%;
@@ -71,6 +71,32 @@
         width:30%;
         margin-left: 35%;
     }
+
+    .main-galeria__contenedor{
+        display: grid;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        column-gap:10px ;
+        row-gap:10px;
+        margin: 10px 0px 50px 0px;
+        h4{
+            color: map-get($paleta ,"color-parrafo" );
+
+        }
+    
+    .item{
+        padding: 50px;
+        text-align: center;  
+        color: map-get($paleta ,"color-parrafo" );
+        margin: 20px;  
+        :hover{
+            filter: grayscale(70%);}
+        
+}
+}
+
+
     /* FIN home */
     
     
@@ -78,14 +104,14 @@
     .h3{
         text-align: center;
         color: map-get($paleta ,"color-gris" );
-        padding: 30px 0 30px 0;
+        padding: 10% 0 10% 0;
     
     }
     .container{
         display: flexbox;
         color:map-get($paleta ,"color-violeta" );
         width: 80%;
-        margin-bottom:20px;
+        margin-bottom:10%;
         border-radius: 1em;
         padding-bottom: 0.5em;
         justify-content: center;
@@ -104,16 +130,13 @@
         /* MAIN COSMETICOS */
     
     .main-cosmeticos h2 {
-        
+        font-size: 45px;
         text-align:center;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         color: #2a262b;
         border-width: thick;
-        padding: 30px 0 30px 0;
+        padding-top: 5%;
     }
-        
-        
-        
     .main-cosmeticos__contenedor{
         display: grid;
         flex-wrap: wrap;
@@ -121,22 +144,26 @@
         align-items: center;
         column-gap:10px ;
         row-gap:10px;
-        margin: 10px 0px 50px 0px;
+        margin: 5% 0 0 5%;
         
-        .row{
-            display: grid;
-            column-gap: 1000px;
         }
         
             .crema{
-                padding: 50px;
+                
+                padding: 5%;
                 text-align: center;
                 color: map-get($paleta , "color-parrafo" );
                     img:hover{
                     transform: scale(1.15);
                     }
+                    p{
+                        text-align: center;
+                        margin-left: 5%;
+                        margin-right: 5%;
+                    }
             }
-    }
+
+    
         /* FIN MAIN COSMETICOS */
     
     
@@ -147,25 +174,34 @@
             
             
         }
-            .main-jabones__contenedor{
-                display: grid;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                column-gap:10px ;
-                row-gap:10px;
-                margin: 10px 0px 50px 0px;
+        .main-jabones__contenedor{
+            display: grid;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            column-gap:10px ;
+            row-gap:10px;
+            margin: 10px 0px 50px 0px;
             
-            
-            .jabon{
-                padding: 50px;
-                text-align: center;  
-                color: map-get($paleta ,"color-parrafo" );            
-                    img:hover{
-                        transform: scale(1.15);
-                    }
+        
             }
-        }
+            
+                .jabon{
+                    padding: 10%;
+                    text-align: center;
+                    
+                        img:hover{
+                        transform: scale(1.15);
+                        }
+                        p{
+                            text-align: center;
+                            margin-left: 5%;
+                            margin-right: 5%;
+                            color: map-get($paleta , "color-parrafo" );
+                        }
+                }
+        
+        
     
         /* FIN MAIN JABONES */
     
@@ -200,8 +236,8 @@
             width: 100%;
             padding: 0 40px 40px 40px;
         }
+    }
 }
-            }
 
     
     
@@ -211,6 +247,7 @@
     /* MAIN TRATAMIENTOS */
     .main-tratamiento{
         text-align: center;
+        box-sizing: border-box;
     }
     .jumbotron{
         background-image: url(./imagen/vintage-g307582187_1920.jpg);
@@ -237,7 +274,8 @@
         }
         
         p{
-            margin-right: 30px !important; 
+            margin-right: 10%;
+            margin-left: 10%; 
             color: map-get($paleta, "color-parrafo");
             font-size: 30px;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -260,7 +298,7 @@
 }
     
     /* FIN MAIN TRATAMIEN
-    /* FIN MAIN TRATAMIENTOS */
+    /* FIN MAIN TRATAMIENTOS. */
         
     
     .footer{
@@ -269,6 +307,6 @@
         width: 100%;
         text-align: center;
         color: #9A9DA0;
+        justify-content: space-evenly;
     }
-    
     
