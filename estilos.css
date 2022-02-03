@@ -81,13 +81,19 @@ main {
   margin: 20px;
 }
 .main-galeria__contenedor .item img {
-  width: 100%;
+  width: 70%;
+  height: auto;
   overflow: hidden;
 }
 .main-galeria__contenedor .item :hover {
   filter: grayscale(70%);
 }
 
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .item img {
+    width: 95%;
+  }
+}
 /* FIN home */
 /* CONTACTO */
 .h3 {

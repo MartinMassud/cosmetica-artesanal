@@ -91,7 +91,8 @@
         text-align: center;  
         color: map-get($paleta ,"color-parrafo" );
         margin: 20px; 
-        img{width: 100%;
+        img{width: 70%;
+            height: auto;
             overflow: hidden;
         } 
         :hover{
@@ -100,7 +101,11 @@
         
 }
 }
-
+@media screen and (min-width:300px) and (max-width:400px){
+    .item img{
+        width: 95%;
+            }
+    }
 
     /* FIN home */
     
